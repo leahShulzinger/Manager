@@ -13,6 +13,7 @@ namespace Manager
             string connectionString = "data source=srv2\\pupils;initial catalog=MyShop_328120357;Integrated Security=SSPI;Persist Security Info=False;TrustServerCertificate=true";
             Products p = new Products();
            int row= p.InsertProduct(connectionString);
+            Console.WriteLine(row);
             p.GetAllProduct(connectionString);
            
         }
